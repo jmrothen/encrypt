@@ -2,7 +2,7 @@ cipher <- function(string, seed = 0){
  alph <- c("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z")
  if(seed == 0){
    seed <- sample(1:1000000, 1)
- } else {seed=seed
+ } else {seed=seed 
  }
  set.seed(seed)
  ciph <- sample(alph,26, replace=FALSE)
